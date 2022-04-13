@@ -1,0 +1,597 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Dribbble首页</title>
+</head>
+
+<body>
+    <!--导航栏-->
+    <div>
+        <div class="nav-container">
+            <nav class="nav-desktop-only align-center">
+                <div>
+                    <a href="#">
+                        <img src="./imgs/logo-black.svg" width="110px" class="nav-desktop-logo">
+                    </a>
+                </div>
+                <ul class="nav-desktop-title">
+                    <li class="nav-desktop-item nav-hover-item">
+                        <a href="#">Inspiration</a>
+                    </li>
+                    <li class="nav-desktop-item nav-hover-item">
+                        <a href="#">Find Work</a>
+                    </li>
+                    <li class="nav-desktop-item nav-hover-item">
+                        <a href="#">Learn Design</a>
+                    </li>
+                    <li class="nav-desktop-item nav-hover-item">
+                        <a href="#">Go Pro</a>
+                    </li>
+                    <li class="nav-desktop-item nav-hover-item">
+                        <a href="#">Hire Designers</a>
+                    </li>
+                </ul>
+            </nav>
+            <div onclick="showMenu()" class="nav-mobile-only align-center nav-mobile-menu-toggle">
+                <a class="menuIcon" href="#">
+                    <img class="icon-menu" src="./imgs/icon-menu.svg">
+                </a>
+                <a style="display: none;" class="backIcon" href="#">
+                    <img class="icon-back" src="./imgs/icon-close.svg">
+                </a>
+            </div>
+            <div class="nav-mobile-only nav-mobile-logo">
+                <a href="#">
+                    <img class="icon-logo" src="./imgs/logo-black.svg">
+                </a>
+                <span class="accessibility-text">Bcak to home page</span>
+            </div>
+            <ul class="nav-action">
+                <li class="nav-action-item less-margin font-body-small">Sign in</li>
+                <li class="nav-action-item show-medium-only">
+                    <a class="form-sub">Sign up</a>
+                </li>
+            </ul>
+        </div>
+        <div style="display: none;" class="nav-mobile-menu">
+            <nav>
+                <ul>
+                    <li>
+                        <label class="site-nav-mobile-dropdown-list">Inspiration</label>
+                    </li>
+                    <li style="margin-top:30px;">
+                        <label class="site-nav-mobile-dropdown-list">Find Work</label>
+                    </li>
+                    <li style="margin-top:30px;">
+                        <label class="site-nav-mobile-dropdown-list">Learn Design</label>
+                    </li>
+                    <li style="margin-top:30px;">
+                        <label class="site-nav-mobile-dropdown-list">Go Pro</label>
+                    </li>
+                    <li style="margin-top:30px;">
+                        <label class="site-nav-mobile-dropdown-list">Hire Designers</label>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <!--图片和列表-->
+
+    <div id="wrap">
+        <div style="background: #f9f8fd;">
+            <div class="container-large signed-out-masthead">
+                <div class="text-content">
+                    <h1>
+                        Discover the world’s top designers & creatives
+                    </h1>
+                    <p>
+                        Dribbble is the leading destination to find & showcase creative work and home to the world's
+                        best design professionals.
+                    </p>
+                    <a class="form-sub sign-up">Sign up</a>
+                </div>
+                <div class="shot-content">
+                    <picture>
+                        <img width="335" height="300" class="signed-out-masthead-image" src="./imgs/banner.webp">
+                    </picture>
+                </div>
+            </div>
+        </div>
+        <div id="wrap-inner" class="flushed">
+            <div id="content" role="main">
+                <div id="main" class="main-full">
+                    <ol class="shots-grid group dribbbles container-fluid">
+                        <li class="shot-thumbnail-container">
+                            <div class="shot-thumbnail-base ">
+                                <figure class="shot-thumbnail-placeholder">
+                                    <img src="./imgs/cover-01.jpg">
+                                </figure>
+                            </div>
+
+                            <div class="shot-details-container">
+                                <div class="user-information">
+                                    <a class="url" href="#">
+                                        <img class="photo" src="./imgs/avatar-01.jpg">
+                                        <span class="display-name">Steve Wolf</span>
+                                    </a>
+                                    <a class="badge-link" href="#">
+                                        <span class="badge badge-team">pro</span>
+                                    </a>
+                                </div>
+                                <div class="shot-statistics-container">
+                                    <div class="shot-statistic">
+                                        <a class="stats-action">
+                                            <img src="./imgs/icon-like.svg" class="icon fill-current">
+                                        </a>
+                                        <span class="color-deep-blue-sea-light-20 font-weight-500">
+                                            225
+                                        </span>
+                                    </div>
+                                    <div class="shot-statistic">
+                                        <a class="stats-action">
+                                            <img src="./imgs/icon-view.svg" class="icon fill-current">
+                                        </a>
+                                        <span class="color-deep-blue-sea-light-20 font-weight-500">
+                                            32.6K
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="shot-thumbnail-container">
+                            <div class="shot-thumbnail-base ">
+                                <figure class="shot-thumbnail-placeholder">
+                                    <img src="./imgs/cover-02.png">
+                                </figure>
+                            </div>
+                            <div class="shot-details-container">
+                                <div class="user-information">
+                                    <a class="url" href="#">
+                                        <img class="photo" src="./imgs/avatar-02.png">
+                                        <span class="display-name">Fireart Studio</span>
+                                    </a>
+                                    <a class="badge-link" href="#">
+                                        <span class="badge badge-team">team</span>
+                                    </a>
+                                </div>
+                                <div class="shot-statistics-container">
+                                    <div class="shot-statistic">
+                                        <a class="stats-action">
+                                            <img src="./imgs/icon-like.svg" class="icon fill-current">
+                                        </a>
+                                        <span class="color-deep-blue-sea-light-20 font-weight-500">
+                                            137
+                                        </span>
+                                    </div>
+                                    <div class="shot-statistic">
+                                        <a class="stats-action">
+                                            <img src="./imgs/icon-view.svg" class="icon fill-current">
+                                        </a>
+                                        <span class="color-deep-blue-sea-light-20 font-weight-500">
+                                            19.9K
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="shot-thumbnail-container">
+                            <div class="shot-thumbnail-base ">
+                                <figure class="shot-thumbnail-placeholder">
+                                    <img src="./imgs/cover-03.jpg">
+                                </figure>
+                            </div>
+                            <div class="shot-details-container">
+                                <div class="user-information">
+                                    <a class="url" href="#">
+                                        <img class="photo" src="./imgs/avatar-03.jpg">
+                                        <span class="display-name">Ethsn Fender</span>
+                                    </a>
+                                    <a class="badge-link" href="#">
+                                        <span class="badge badge-team">pro</span>
+                                    </a>
+                                </div>
+                                <div class="shot-statistics-container">
+                                    <div class="shot-statistic">
+                                        <a class="stats-action">
+                                            <img src="./imgs/icon-like.svg" class="icon fill-current">
+                                        </a>
+                                        <span class="color-deep-blue-sea-light-20 font-weight-500">
+                                            152
+                                        </span>
+                                    </div>
+                                    <div class="shot-statistic">
+                                        <a class="stats-action">
+                                            <img src="./imgs/icon-view.svg" class="icon fill-current">
+                                        </a>
+                                        <span class="color-deep-blue-sea-light-20 font-weight-500">
+                                            26.9k
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="shot-thumbnail-container">
+                            <div class="shot-thumbnail-base ">
+                                <figure class="shot-thumbnail-placeholder">
+                                    <img src="./imgs/cover-04.png">
+                                </figure>
+                            </div>
+                            <div class="shot-details-container">
+                                <div class="user-information">
+                                    <a class="url" href="#">
+                                        <img class="photo" src="./imgs/avatar-04.gif">
+                                        <span class="display-name">Stevan Rodic</span>
+                                    </a>
+                                    <a class="badge-link" href="#">
+                                        <span class="badge badge-team">pro</span>
+                                    </a>
+                                </div>
+                                <div class="shot-statistics-container">
+                                    <div class="shot-statistic">
+                                        <a class="stats-action">
+                                            <img src="./imgs/icon-like.svg" class="icon fill-current">
+                                        </a>
+                                        <span class="color-deep-blue-sea-light-20 font-weight-500">
+                                            96
+                                        </span>
+                                    </div>
+                                    <div class="shot-statistic">
+                                        <a class="stats-action">
+                                            <img src="./imgs/icon-view.svg" class="icon fill-current">
+                                        </a>
+                                        <span class="color-deep-blue-sea-light-20 font-weight-500">
+                                            16.9K
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="shot-thumbnail-container">
+                            <div class="shot-thumbnail-base ">
+                                <figure class="shot-thumbnail-placeholder">
+                                    <img src="./imgs/cover-05.png">
+                                </figure>
+                            </div>
+                            <div class="shot-details-container">
+                                <div class="user-information">
+                                    <a class="url" href="#">
+                                        <img class="photo" src="./imgs/avatar-05.png">
+                                        <span class="display-name">Dribbble</span>
+                                    </a>
+                                    <a class="badge-link" href="#">
+                                        <span class="badge badge-team">Team</span>
+                                    </a>
+
+                                </div>
+                                <div class="shot-statistics-container">
+                                    <div class="shot-statistic">
+                                        <a class="stats-action">
+                                            <img src="./imgs/icon-like.svg" class="icon fill-current">
+                                        </a>
+                                        <span class="color-deep-blue-sea-light-20 font-weight-500">
+                                            43
+                                        </span>
+                                    </div>
+                                    <div class="shot-statistic">
+                                        <a class="stats-action">
+                                            <img src="./imgs/icon-view.svg" class="icon fill-current">
+                                        </a>
+                                        <span class="color-deep-blue-sea-light-20 font-weight-500">
+                                            3.5K
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="shot-thumbnail-container">
+                            <div class="shot-thumbnail-base ">
+                                <figure class="shot-thumbnail-placeholder">
+                                    <img src="./imgs/cover-06.png">
+                                </figure>
+                            </div>
+                            <div class="shot-details-container">
+                                <div class="user-information">
+                                    <a class="url" href="#">
+                                        <img class="photo" src="./imgs/avatar-06.jpg">
+                                        <span class="display-name">Alfrey Davilla | vaneltia</span>
+                                    </a>
+                                    <a class="badge-link" href="#">
+                                        <span class="badge badge-team">pro/span>
+                                    </a>
+
+                                </div>
+                                <div class="shot-statistics-container">
+                                    <div class="shot-statistic">
+                                        <a class="stats-action">
+                                            <img src="./imgs/icon-like.svg" class="icon fill-current">
+                                        </a>
+                                        <span class="color-deep-blue-sea-light-20 font-weight-500">
+                                            74
+                                        </span>
+                                    </div>
+                                    <div class="shot-statistic">
+                                        <a class="stats-action">
+                                            <img src="./imgs/icon-view.svg" class="icon fill-current">
+                                        </a>
+                                        <span class="color-deep-blue-sea-light-20 font-weight-500">
+                                            7.4K
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="shot-thumbnail-container">
+                            <div class="shot-thumbnail-base ">
+                                <figure class="shot-thumbnail-placeholder">
+                                    <img src="./imgs/cover-07.png">
+                                </figure>
+                            </div>
+                            <div class="shot-details-container">
+                                <div class="user-information">
+                                    <a class="url" href="#">
+                                        <img class="photo" src="./imgs/avatar-07.png">
+                                        <span class="display-name">tubik</span>
+                                    </a>
+                                    <a class="badge-link" href="#">
+                                        <span class="badge badge-team">Team</span>
+                                    </a>
+
+                                </div>
+                                <div class="shot-statistics-container">
+                                    <div class="shot-statistic">
+                                        <a class="stats-action">
+                                            <img src="./imgs/icon-like.svg" class="icon fill-current">
+                                        </a>
+                                        <span class="color-deep-blue-sea-light-20 font-weight-500">
+                                            124
+                                        </span>
+                                    </div>
+                                    <div class="shot-statistic">
+                                        <a class="stats-action">
+                                            <img src="./imgs/icon-view.svg" class="icon fill-current">
+                                        </a>
+                                        <span class="color-deep-blue-sea-light-20 font-weight-500">
+                                            18.2k
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="shot-thumbnail-container">
+                            <div class="shot-thumbnail-base ">
+                                <figure class="shot-thumbnail-placeholder">
+                                    <img src="./imgs/cover-08.jpg">
+                                </figure>
+                            </div>
+                            <div class="shot-details-container">
+                                <div class="user-information">
+                                    <a class="url" href="#">
+                                        <img class="photo" src="./imgs/avatar-08.png">
+                                        <span class="display-name">Dlanid</span>
+                                    </a>
+                                    <a class="badge-link" href="#">
+                                        <span class="badge badge-team">pro</span>
+                                    </a>
+
+                                </div>
+                                <div class="shot-statistics-container">
+                                    <div class="shot-statistic">
+                                        <a class="stats-action">
+                                            <img src="./imgs/icon-like.svg" class="icon fill-current">
+                                        </a>
+                                        <span class="color-deep-blue-sea-light-20 font-weight-500">
+                                            46
+                                        </span>
+                                    </div>
+                                    <div class="shot-statistic">
+                                        <a class="stats-action">
+                                            <img src="./imgs/icon-view.svg" class="icon fill-current">
+                                        </a>
+                                        <span class="color-deep-blue-sea-light-20 font-weight-500">
+                                            7.1K
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="shot-thumbnail-container">
+                            <div class="shot-thumbnail-base ">
+                                <figure class="shot-thumbnail-placeholder">
+                                    <img src="./imgs/cover-09.png">
+                                </figure>
+                            </div>
+                            <div class="shot-details-container">
+                                <div class="user-information">
+                                    <a class="url" href="#">
+                                        <img class="photo" src="./imgs/avatar-09.jpg">
+                                        <span class="display-name">The Faces</span>
+                                    </a>
+                                    <a class="badge-link" href="#">
+                                        <span class="badge badge-team">Team</span>
+                                    </a>
+
+                                </div>
+                                <div class="shot-statistics-container">
+                                    <div class="shot-statistic">
+                                        <a class="stats-action">
+                                            <img src="./imgs/icon-like.svg" class="icon fill-current">
+                                        </a>
+                                        <span class="color-deep-blue-sea-light-20 font-weight-500">
+                                            59
+                                        </span>
+                                    </div>
+                                    <div class="shot-statistic">
+                                        <a class="stats-action">
+                                            <img src="./imgs/icon-view.svg" class="icon fill-current">
+                                        </a>
+                                        <span class="color-deep-blue-sea-light-20 font-weight-500">
+                                            7.3K
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="shot-thumbnail-container">
+                            <div class="shot-thumbnail-base ">
+                                <figure class="shot-thumbnail-placeholder">
+                                    <img src="./imgs/cover-10.png">
+                                </figure>
+                            </div>
+                            <div class="shot-details-container">
+                                <div class="user-information">
+                                    <a class="url" href="#">
+                                        <img class="photo" src="./imgs/avatar-10.png">
+                                        <span class="display-name">Odama</span>
+                                    </a>
+                                    <a class="badge-link" href="#">
+                                        <span class="badge badge-team">Team</span>
+                                    </a>
+
+                                </div>
+                                <div class="shot-statistics-container">
+                                    <div class="shot-statistic">
+                                        <a class="stats-action">
+                                            <img src="./imgs/icon-like.svg" class="icon fill-current">
+                                        </a>
+                                        <span class="color-deep-blue-sea-light-20 font-weight-500">
+                                            54
+                                        </span>
+                                    </div>
+                                    <div class="shot-statistic">
+                                        <a class="stats-action">
+                                            <img src="./imgs/icon-view.svg" class="icon fill-current">
+                                        </a>
+                                        <span class="color-deep-blue-sea-light-20 font-weight-500">
+                                            1.1K
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="shot-thumbnail-container">
+                            <div class="shot-thumbnail-base ">
+                                <figure class="shot-thumbnail-placeholder">
+                                    <img src="./imgs/cover-11.jpg">
+                                </figure>
+                            </div>
+                            <div class="shot-details-container">
+                                <div class="user-information">
+                                    <a class="url" href="#">
+                                        <img class="photo" src="./imgs/avatar-11.jpg">
+                                        <span class="display-name">Matt Naylor</span>
+                                    </a>
+         
+
+                                </div>
+                                <div class="shot-statistics-container">
+                                    <div class="shot-statistic">
+                                        <a class="stats-action">
+                                            <img src="./imgs/icon-like.svg" class="icon fill-current">
+                                        </a>
+                                        <span class="color-deep-blue-sea-light-20 font-weight-500">
+                                            56
+                                        </span>
+                                    </div>
+                                    <div class="shot-statistic">
+                                        <a class="stats-action">
+                                            <img src="./imgs/icon-view.svg" class="icon fill-current">
+                                        </a>
+                                        <span class="color-deep-blue-sea-light-20 font-weight-500">
+                                            8.1K
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="shot-thumbnail-container">
+                            <div class="shot-thumbnail-base ">
+                                <figure class="shot-thumbnail-placeholder">
+                                    <img src="./imgs/cover-12.png">
+                                </figure>
+                            </div>
+                            <div class="shot-details-container">
+                                <div class="user-information">
+                                    <a class="url" href="#">
+                                        <img class="photo" src="./imgs/avatar-12.jpg">
+                                        <span class="display-name">Voila</span>
+                                    </a>
+                                    <a class="badge-link" href="#">
+                                        <span class="badge badge-team">Team</span>
+                                    </a>
+
+                                </div>
+                                <div class="shot-statistics-container">
+                                    <div class="shot-statistic">
+                                        <a class="stats-action">
+                                            <img src="./imgs/icon-like.svg" class="icon fill-current">
+                                        </a>
+                                        <span class="color-deep-blue-sea-light-20 font-weight-500">
+                                            164
+                                        </span>
+                                    </div>
+                                    <div class="shot-statistic">
+                                        <a class="stats-action">
+                                            <img src="./imgs/icon-view.svg" class="icon fill-current">
+                                        </a>
+                                        <span class="color-deep-blue-sea-light-20 font-weight-500">
+                                            24.1K
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    
+
+    <!--页面底部-->
+    <div class="site-footer">
+        <div class="container-large">
+            <div class="footer-main-content">
+                <div>
+                    <a>
+                        <img class="icon dribbble-wordmark" src="./imgs/logo-red.svg" width="110px" alt="1">
+                    </a>
+                    <div class="tagline" style="font-size: 20px;">
+                        Dribbble is the world’s leading community for creatives to share, grow, and get hired.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <script>
+        function showMenu() {
+            let menuIcon = document.querySelector(".menuIcon");
+            let backIcon = document.querySelector(".backIcon");
+            let menu = document.querySelector(".nav-mobile-menu");
+            let all = document.querySelector("#wrap-one");
+            if (menu.style.display == "none") {
+                menuIcon.style.display = "none";
+                backIcon.style.display = "block";
+                menu.style.display = "block";
+                all.style.display = "none"
+            } else {
+                menuIcon.style.display = "block";
+                backIcon.style.display = "none";
+                menu.style.display = "none";
+                all.style.display = "block"
+            }
+        }
+    </script>
+</body>
+
+</html>
